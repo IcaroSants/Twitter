@@ -1,5 +1,11 @@
 # TWITTER
-## introdução
+## Sumário
+* Introdução
+* Pré-Processamento
+* Modelagem
+* Ferramentas
+
+## Introdução
 Esse é um projeto de NLP voltado para à analise de sentimento com tweets. Os tweets usados foram obtidos do site Kaggle. O gráfico abaixo mostra os assuntos e quais os tem  mais e menos menções
 
 ![Assuntos dos tweets](assuntos.png)
@@ -8,7 +14,7 @@ Os tweets tem os seguintes rotulos:**Positivos**, **Neutro**, **Irrelevante** e 
 
 ![Quantidade de tweets](quantidade_de_tweets.png) 
 
-##Pré-Processamento
+## Pré-Processamento
 
 Antes de ir para a etepa de classficação os tweets passaram pela etapa de prè-processamento. Isso era necessário para remover emojis e caracteres especiais presentes nesse tipo de texto e  que poderia prejudicar o processso de classificação.
 
@@ -18,7 +24,7 @@ Depois disso, o as palavras vão para o processo de limpeza. Para isso, palavra 
 
 Ápos isso, as palavras foram padronizadas pelo processo de lammatização, ou seja as palavras foram colocadas na forma do  seu  radical. Depois as palavras foram colocadas em minuscula e finalizado o processamento de pré-processamento.
 
-##Modelagem
+## Modelagem
 
 Com os tweets tratados, precisamos transformar-los em vetor. O metodo escolhido para isso foi word embedding. Isso significa que cada palavra sera representada como um vetor pequeno e denso. Onde palavras com significados parecido terao vetores parecidos. Para desenvolver foi criado um modelo que aprendesse o melhor vetor para cada palavra.
 
